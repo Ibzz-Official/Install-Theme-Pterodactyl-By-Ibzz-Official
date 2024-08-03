@@ -63,7 +63,6 @@ install_jq() {
   echo -e "                                                       "
   sleep 1
   clear
-
 }
 
 # Install theme
