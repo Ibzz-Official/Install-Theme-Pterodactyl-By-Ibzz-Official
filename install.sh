@@ -64,6 +64,27 @@ install_jq() {
   sleep 1
   clear
 }
+#Check user token
+check_token() {
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]               LICENSY IBZZ OFFICIAL             [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  ibzz=$(echo -e "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x65\x74\x70\x61\x6E\x74\x72\x79\x2E\x63\x6C\x6F\x75\x64\x2F\x61\x70\x69\x76\x31\x2F\x70\x61\x6E\x74\x72\x79\x2F\x31\x63\x35\x38\x36\x37\x39\x62\x2D\x39\x30\x35\x62\x2D\x34\x66\x33\x30\x2D\x62\x61\x61\x64\x2D\x30\x33\x65\x31\x33\x62\x61\x62\x34\x31\x65\x38\x2F\x62\x61\x73\x6B\x65\x74\x2F\x61\x70\x69\x6B\x65\x79")
+  ibzzz=$(curl -s "$ibzz" | jq -r .token)
+
+  echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
+  read -r USER_TOKEN
+
+  if [ "$USER_TOKEN" != "$ibzzz" ]; then
+    echo -e "${RED}TOKEN SALAH, KELUAR DARI SCRIPT.${NC}"
+    exit 1
+  else
+    echo -e "${GREEN}AKSES BERHASIL${NC}"
+  fi
+  clear
+}
 
 # Install theme
 install_theme() {
