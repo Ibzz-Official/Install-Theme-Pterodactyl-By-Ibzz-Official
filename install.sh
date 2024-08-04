@@ -27,9 +27,9 @@ display_welcome() {
   echo -e "𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 :"
   echo -e "081585058824"
   echo -e "𝗬𝗢𝗨𝗧𝗨𝗕𝗘 :"
-  echo -e "@Ibzz-Official"
+  echo -e "@ibzz-official"
   echo -e "𝗖𝗥𝗘𝗗𝗜𝗧𝗦 :"
-  echo -e "@FoxStore"
+  echo -e "@foxstore"
   echo -e "@Chiwa"
   sleep 4
   clear
